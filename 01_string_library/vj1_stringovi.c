@@ -65,6 +65,20 @@ char* mystrstr(char* s1, char* s2) {
     return NULL;
 }
 
+void reverse(const char* prvi, char* drugi) {
+    int duzina = mystrlen(prvi);
+    int j = duzina - 1;
+    int k = 0;
+
+    while (j >= 0) {
+        drugi[k] = prvi[j];
+        k++;
+        j--;
+    }
+
+    drugi[k] = '\0';
+}
+
 int main(void) {
 	char text[] = "Hello";
     char kopija[50];
@@ -99,4 +113,13 @@ int main(void) {
         printf("Pronadeno: %s\n", rezultat);
     }
     return 0;
+
+    char original[] = "Hello";
+    char obrnuto[50];
+
+    reverse(original, obrnuto);
+
+    printf("Zadatak6:\n");
+    printf("Original: %s\n", original);
+    printf("Obrnuto: %s\n", obrnuto);
 }
