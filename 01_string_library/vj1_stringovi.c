@@ -49,6 +49,22 @@ void mystrcat(char* dest, const char* src){
     dest[i] = '\0';
 }
 
+char* mystrstr(char* s1, char* s2) {
+    if (s2[0] == '\0') {
+        return s1;
+    }
+    for (int i = 0; s1[i] != '\0'; i++) {
+        int j = 0;
+        while (s1[i + j] != '\0' && s2[j] != '\0' && s1[i + j] == s2[j]) {
+            j++;
+            if (s2[j] == '\0') {
+                return &s1[i];
+            }
+        }
+    }
+    return NULL;
+}
+
 int main(void) {
 	char text[] = "Hello";
     char kopija[50];
@@ -69,5 +85,18 @@ int main(void) {
     printf("Zadatak4:\n");
     printf("Spojeni string: %s\n", text2);
 
+    char veliki[] = "abcabbaan";
+    char mali[] = "ba";
+
+    char* rezultat = mystrstr(veliki, mali);
+
+    printf("Zadatak5:\n");
+
+    if (rezultat == NULL) {
+        printf("Nije pronadeno\n");
+    }
+    else {
+        printf("Pronadeno: %s\n", rezultat);
+    }
     return 0;
 }
