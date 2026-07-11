@@ -123,11 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.c" />
-    <ClCompile Include="mystring.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="mystring.h" />
+    <ClCompile Include="vj1_stringovi.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
