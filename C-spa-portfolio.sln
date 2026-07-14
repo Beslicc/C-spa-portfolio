@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36811.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_string_library", "01_string_library\01_string_library.vcxproj", "{C978A19F-1336-407B-B591-C57641B388F8}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_dynamic_arrays_structs", "02_dynamic_arrays_structs\02_dynamic_arrays_structs.vcxproj", "{4980CCEF-9ADF-4184-B5E4-F9F4D6577ACA}"
 EndProject
 Global
@@ -15,14 +13,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C978A19F-1336-407B-B591-C57641B388F8}.Debug|x64.ActiveCfg = Debug|x64
-		{C978A19F-1336-407B-B591-C57641B388F8}.Debug|x64.Build.0 = Debug|x64
-		{C978A19F-1336-407B-B591-C57641B388F8}.Debug|x86.ActiveCfg = Debug|Win32
-		{C978A19F-1336-407B-B591-C57641B388F8}.Debug|x86.Build.0 = Debug|Win32
-		{C978A19F-1336-407B-B591-C57641B388F8}.Release|x64.ActiveCfg = Release|x64
-		{C978A19F-1336-407B-B591-C57641B388F8}.Release|x64.Build.0 = Release|x64
-		{C978A19F-1336-407B-B591-C57641B388F8}.Release|x86.ActiveCfg = Release|Win32
-		{C978A19F-1336-407B-B591-C57641B388F8}.Release|x86.Build.0 = Release|Win32
 		{4980CCEF-9ADF-4184-B5E4-F9F4D6577ACA}.Debug|x64.ActiveCfg = Debug|x64
 		{4980CCEF-9ADF-4184-B5E4-F9F4D6577ACA}.Debug|x64.Build.0 = Debug|x64
 		{4980CCEF-9ADF-4184-B5E4-F9F4D6577ACA}.Debug|x86.ActiveCfg = Debug|Win32
